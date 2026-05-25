@@ -1,0 +1,17 @@
+# R Package Requirements
+# Install all packages by running the following in R:
+#   install.packages(readLines("requirements.txt")[!grepl("^#|^$", readLines("requirements.txt"))])
+
+tidyverse
+caret
+glmnet
+randomForest
+e1071
+rpart
+dbscan
+isotree
+factoextra
+nnet
+pROC
+reshape2
+kernlab
