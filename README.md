@@ -201,7 +201,3 @@ Data Scientist | Healthcare & Fintech Analytics
 
 LinkedIn: https://linkedin.com/in/antoine-ward-mph-2401581a1
 GitHub: https://github.com/antoinewrd1
-
-Turn this into a top-tier portfolio project (with Streamlit or dashboard)
-Convert it into a Python + Spark + PyTorch version (much stronger for interviews)
-Add XGBoost + SHAP + production pipeline to make it elite-level 🚀
