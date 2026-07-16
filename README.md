@@ -9,37 +9,37 @@ Buy Now, Pay Later (BNPL) platforms have rapidly transformed consumer financing 
 
 This project applies end-to-end machine learning and analytics techniques to:
 
-Predict credit risk scores,
-Classify default vs. non-default customers,
-Identify customer segments,
-Detect anomalies and high-risk behaviors
+* Predict credit risk scores
+* Classify default vs. non-default customers
+* Identify customer segments
+* Detect anomalies and high-risk behaviors
 
 The workflow integrates data preprocessing, exploratory data analysis (EDA), supervised learning, unsupervised learning, and model evaluation to simulate a real-world fintech risk modeling pipeline.
 
 
 📂 **Dataset**
 
-_**Source:**_ Kaggle BNPL Credit Risk Dataset
+* _**Source:**_ Kaggle BNPL Credit Risk Dataset
 
-**_Size:_** ~10,000 records
+* **_Size:_** ~10,000 records
 
-_**Features include:**_ Customer demographics, income and employment details, transaction history, product categories, risk score and default flag
+* _**Features include:**_ Customer demographics, income and employment details, transaction history, product categories, risk score and default flag
 
 ⚙️ Tech Stack
 
-**Languages & Tools:** R, Kaggle API
+* **Languages & Tools:** R, Kaggle API
 
-_**Libraries:**_
+* **Libraries:**
 
-**Data Manipulation:** tidyverse, reshape2
+- **Data Manipulation:** tidyverse, reshape2
 
-**Modeling:** caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
+- **Modeling:** caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
 
-**Clustering & Anomaly Detection:** dbscan, isotree
+- **Clustering & Anomaly Detection:** dbscan, isotree
 
-**Visualization:** ggplot2, factoextra
+- **Visualization:** ggplot2, factoextra
 
-**Evaluation:** pROC
+- **Evaluation:** pROC
 
 
 🔧 **Project Pipeline**
@@ -55,29 +55,29 @@ __**1. Data Preparation:**__
 * Removed redundant fields
 
 
-**_2. Exploratory Data Analysis (EDA):_**
+**2. Exploratory Data Analysis (EDA):**
    
-Risk score distribution
+* Risk score distribution
 
-Default rates by customer segment
+* Default rates by customer segment
 
-Income vs. risk relationships
+* Income vs. risk relationships
 
-Correlation heatmap
+* Correlation heatmap
 
 
 📌 **Key Insight:**
 
-Certain customer segments show significantly higher default rates
+* Certain customer segments show significantly higher default rates
 
-Strong relationships exist between financial attributes and risk
+* Strong relationships exist between financial attributes and risk
 
 
-3. Train/Test Split
+**3. Train/Test Split**
    
-80/20 split using stratified sampling
+* 80/20 split using stratified sampling
 
-Preserved class distribution for reliable evaluation
+* Preserved class distribution for reliable evaluation
 
 
 4. Feature Scaling
