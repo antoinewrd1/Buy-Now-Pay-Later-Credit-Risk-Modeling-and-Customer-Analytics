@@ -23,7 +23,7 @@ _**Source:**_ Kaggle BNPL Credit Risk Dataset
 
 **_Size:_** ~10,000 records
 
-Features include:
+_**Features include:**_
 
 Customer demographics,
 Income and employment details,
@@ -33,26 +33,26 @@ Risk score and default flag
 
 ⚙️ Tech Stack
 
-**Languages & Tools**
+**Languages & Tools:**
 
 R, Kaggle API
 
-**Libraries:**
+_**Libraries:**_
 
-Data Manipulation: tidyverse, reshape2
+**Data Manipulation:** tidyverse, reshape2
 
-Modeling: caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
+**Modeling:** caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
 
 Clustering & Anomaly Detection: dbscan, isotree
 
-Visualization: ggplot2, factoextra
+**Visualization:** ggplot2, factoextra
 
-Evaluation: pROC
+**Evaluation:** pROC
 
 
 🔧 **Project Pipeline**
 
-1. Data Preparation
+__**1. Data Preparation:**__
    
 Converted categorical variables to factors
 
@@ -63,7 +63,7 @@ Standardized target variable (default_flag)
 Removed redundant fields
 
 
-2. Exploratory Data Analysis (EDA)
+**_2. Exploratory Data Analysis (EDA):_**
    
 Risk score distribution
 
