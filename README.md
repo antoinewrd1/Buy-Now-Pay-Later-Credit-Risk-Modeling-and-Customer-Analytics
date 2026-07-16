@@ -19,9 +19,9 @@ The workflow integrates data preprocessing, exploratory data analysis (EDA), sup
 
 📂 **Dataset**
 
-Source: Kaggle BNPL Credit Risk Dataset
+_**Source:**_ Kaggle BNPL Credit Risk Dataset
 
-Size: ~10,000 records
+**_Size:_** ~10,000 records
 
 Features include:
 
@@ -37,7 +37,7 @@ Risk score and default flag
 
 R, Kaggle API
 
-Libraries:
+**Libraries:**
 
 Data Manipulation: tidyverse, reshape2
 
