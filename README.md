@@ -83,13 +83,13 @@ __**1. Data Preparation:**__
 
 🔹 **Classification (Default Prediction)**
  * **Baseline Models:**
-  * Decision Tree
-  * Logistic Regression
+   * Decision Tree
+   * Logistic Regression
 
 * **Tuned Models (5-Fold CV, ROC Optimization):**
- * Logistic Regression
- * Random Forest
- * SVM (Radial Kernel)
+  * Logistic Regression
+  * Random Forest
+  * SVM (Radial Kernel)
 
 📊 _**AUC Comparison**:_
 
