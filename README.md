@@ -159,69 +159,51 @@ AUC (Area Under Curve)
 1. Use Ensemble Models: Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
    
 2. Handle Class Imbalance:
-* Apply:
- * SMOTE
- * Class weighting
- * Threshold tuning
+Apply:
+  * SMOTE
+  * Class weighting
+  * Threshold tuning
 
 3. Prevent Data Leakage:
-   
-Remove features derived from target variables
+* Remove features derived from target variables
+* Validate feature independence
 
-Validate feature independence
-
-4. Optimize Decision Thresholds:
-   
-Move beyond default 0.5 cutoff
-
-Align with business risk tolerance
+4. Optimize Decision Thresholds: 
+* Move beyond default 0.5 cutoff
+* Align with business risk tolerance
 
 5. Add Explainability
-   
-Feature importance,
-SHAP values (future improvement)
+* Feature importance
+* SHAP values (future improvement)
 
-6. Improve Neural Networks
-    
-Regularization,
-better architecture,
-balanced datasets
+6. Improve Neural Networks   
+* Regularization
+* Better architecture
+* Balanced datasets
 
 7. Leverage Unsupervised Learning
-    
-Integrate clustering + anomaly detection into production pipelines
+* Integrate clustering + anomaly detection into production pipelines
 
 ▶️ **How to Run**
 
 1. Clone Repository
-   
-git clone https://github.com/yourusername/bnpl-credit-risk.git
-
-cd bnpl-credit-risk
+* git clone https://github.com/yourusername/bnpl-credit-risk.git
+* cd bnpl-credit-risk
 
 2. Install Dependencies
-
-Run the script — packages will auto-install:
-
-source("bnpl_analysis.R")
+* Run the script — packages will auto-install:
+* source("bnpl_analysis.R")
 
 3. Kaggle Setup
-
-Make sure Kaggle API is configured:
-
-kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
+* Make sure Kaggle API is configured:
+* kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
 
 📊 **Future Improvements**
-
-Implement XGBoost / LightGBM
-
-Add hyperparameter tuning with Bayesian optimization
-
-Deploy model via API (Plumber or FastAPI)
-
-Build interactive dashboard (Shiny / Tableau)
-
-Integrate real-time scoring pipeline (Spark / Kafka)
+* Implement XGBoost / LightGBM
+* Add hyperparameter tuning with Bayesian optimization
+* Deploy model via API (Plumber or FastAPI)
+* Build interactive dashboard (Shiny / Tableau)
+* Integrate real-time scoring pipeline (Spark / Kafka)
 
 📎 **Project Structure**
 ├── data/
