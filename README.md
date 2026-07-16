@@ -186,15 +186,15 @@ _7. Leverage Unsupervised Learning:_
 
 ▶️ **How to Run**
 
-1. Clone Repository:
+_**1. Clone Repository:**_
 * git clone https://github.com/yourusername/bnpl-credit-risk.git
 * cd bnpl-credit-risk
 
-2. Install Dependencies:
+_**2. Install Dependencies:**_
 * Run the script — packages will auto-install:
 * source("bnpl_analysis.R")
 
-3. Kaggle Setup:
+_**3. Kaggle Setup:**_
 * Make sure Kaggle API is configured:
 * kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
 
