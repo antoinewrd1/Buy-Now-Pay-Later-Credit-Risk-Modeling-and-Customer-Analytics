@@ -49,6 +49,7 @@ Standardized target variable (default_flag)
 
 Removed redundant fields
 
+
 2. Exploratory Data Analysis (EDA)
    
 Risk score distribution
@@ -59,9 +60,11 @@ Income vs. risk relationships
 
 Correlation heatmap
 
+
 📌 **Key Insight:**
 
 Certain customer segments show significantly higher default rates
+
 Strong relationships exist between financial attributes and risk
 
 3. Train/Test Split
