@@ -85,12 +85,10 @@ __**1. Data Preparation:**__
 🔹 **Classification (Default Prediction)**
 
 * **Baseline Models:**
-
  * Decision Tree
  * Logistic Regression
 
 * **Tuned Models (5-Fold CV, ROC Optimization):**
-
  * Logistic Regression
  * Random Forest
  * SVM (Radial Kernel)
@@ -99,7 +97,6 @@ __**1. Data Preparation:**__
 📊 _**AUC Comparison**:_
 
 Model	AUC:
-
 * Random Forest	0.768
 * SVM	0.753
 * Logistic	0.740
@@ -107,7 +104,7 @@ Model	AUC:
 🏆 Best Model: Random Forest
 
 
-📈 **Evaluation Metrics**
+📈 **Evaluation Metrics:**
 
 Confusion Matrix,
 Accuracy,
@@ -116,84 +113,59 @@ Specificity,
 ROC Curve,
 AUC (Area Under Curve)
 
-🧠 Unsupervised Learning
+🧠 **Unsupervised Learning**
 
-🔹 Clustering,
-K-Means (k = 3),
-Hierarchical Clustering,
-DBSCAN
+🔹 **Clustering**
+* K-Means (k = 3)
+* Hierarchical Clustering
+* DBSCAN
 
 
 📌 **Insights:**
-
-One dominant customer group
-
-Smaller clusters represent niche/high-risk segments
-
-DBSCAN successfully identifies noise (outliers)
-
-
-🔹 Anomaly Detection:
-
-Isolation Forest,
-One-Class SVM
-
+* One dominant customer group
+* Smaller clusters represent niche/high-risk segments
+* DBSCAN successfully identifies noise (outliers)
+  
+🔹 **Anomaly Detection**
+* Isolation Forest
+* One-Class SVM
 
 📌 **Purpose:**
-
-Detect fraudulent or unusual financial behavior
-
-Identify high-risk customers outside normal patterns
-
+* Detect fraudulent or unusual financial behavior
+* Identify high-risk customers outside normal patterns
 
 🧪 **Neural Network**
 
-Single hidden layer (5 neurons)
+* Single hidden layer (5 neurons)
+* Binary classification (default prediction)
 
-Binary classification (default prediction)
-
-📊 Results:
-
-Accuracy: 39.1%
-
-Sensitivity: 99.5%
-
-Specificity: 0.3%
+📊 _**Results:**_
+* Accuracy: 39.1%
+* Sensitivity: 99.5%
+* Specificity: 0.3%
 
 ⚠️ Issue:
-
-Model predicts nearly all observations as default
-
-Caused by class imbalance and poor convergence
-
+* Model predicts nearly all observations as default
+* Caused by class imbalance and poor convergence
 
 🔍 **Key Findings**
 
-Random Forest is the most reliable model across tasks
-
-Linear Regression suffers from data leakage
-
-Logistic Regression underperforms without feature engineering
-
-SVM performs well but shows instability
-
-Neural Networks struggle with imbalanced tabular data
-
-Customer behavior is largely homogeneous with niche high-risk segments
+* Random Forest is the most reliable model across tasks
+* Linear Regression suffers from data leakage
+* Logistic Regression underperforms without feature engineering
+* SVM performs well but shows instability
+* Neural Networks struggle with imbalanced tabular data
+* Customer behavior is largely homogeneous with niche high-risk segments
 
 📌 **Recommendations**
 
-1. Use Ensemble Models
+1. Use Ensemble Models: Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
    
-Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
-
-2. Handle Class Imbalance
-   
-Apply:
-
-SMOTE,
-Class weighting,
-Threshold tuning
+2. Handle Class Imbalance:
+* Apply:
+ * SMOTE
+ * Class weighting
+ * Threshold tuning
 
 3. Prevent Data Leakage:
    
