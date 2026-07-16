@@ -40,16 +40,23 @@ Evaluation: pROC
 
 🔧 **Project Pipeline**
 1. Data Preparation
+   
 Converted categorical variables to factors
+
 Engineered feature: days_since_transaction
+
 Standardized target variable (default_flag)
+
 Removed redundant fields
 
 2. Exploratory Data Analysis (EDA)
    
 Risk score distribution
+
 Default rates by customer segment
+
 Income vs. risk relationships
+
 Correlation heatmap
 
 📌 **Key Insight:**
@@ -60,11 +67,13 @@ Strong relationships exist between financial attributes and risk
 3. Train/Test Split
    
 80/20 split using stratified sampling
+
 Preserved class distribution for reliable evaluation
 
 4. Feature Scaling
    
 Centering and scaling applied to numeric variables
+
 Critical for models like:
 SVM
 Neural Networks
