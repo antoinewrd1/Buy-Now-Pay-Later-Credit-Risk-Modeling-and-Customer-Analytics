@@ -78,12 +78,10 @@ __**1. Data Preparation:**__
 
 
 📊 _**Results:**_
-
 * Linear Regression RMSE ≈ 0 → ⚠️ indicates data leakage
 * Random Forest RMSE = 4.27 → realistic and reliable
 
 🔹 **Classification (Default Prediction)**
-
 * **Baseline Models:**
  * Decision Tree
  * Logistic Regression
@@ -92,7 +90,6 @@ __**1. Data Preparation:**__
  * Logistic Regression
  * Random Forest
  * SVM (Radial Kernel)
-
 
 📊 _**AUC Comparison**:_
 
