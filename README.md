@@ -20,66 +20,55 @@ The workflow integrates data preprocessing, exploratory data analysis (EDA), sup
 📂 **Dataset**
 
 * _**Source:**_ Kaggle BNPL Credit Risk Dataset
-* **_Size:_** ~10,000 records
+* _**Size:**_ ~10,000 records
 * _**Features include:**_ Customer demographics, income and employment details, transaction history, product categories, risk score and default flag
 
 ⚙️ Tech Stack
 
 * **Languages & Tools:** R, Kaggle API
 * **Libraries:**
-- **Data Manipulation:** tidyverse, reshape2
-- **Modeling:** caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
-- **Clustering & Anomaly Detection:** dbscan, isotree
-- **Visualization:** ggplot2, factoextra
-- **Evaluation:** pROC
+  * **Data Manipulation:** tidyverse, reshape2
+  * **Modeling:** caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
+  * **Clustering & Anomaly Detection:** dbscan, isotree
+  * **Visualization:** ggplot2, factoextra
+  * **Evaluation:** pROC
   
 🔧 **Project Pipeline**
 
 __**1. Data Preparation:**__
    
 * Converted categorical variables to factors
-
 * Engineered feature: days_since_transaction
-
 * Standardized target variable (default_flag)
-
 * Removed redundant fields
 
 
 **2. Exploratory Data Analysis (EDA):**
    
 * Risk score distribution
-
 * Default rates by customer segment
-
 * Income vs. risk relationships
-
 * Correlation heatmap
 
 
 📌 **Key Insight:**
 
 * Certain customer segments show significantly higher default rates
-
 * Strong relationships exist between financial attributes and risk
 
 
 **3. Train/Test Split**
    
 * 80/20 split using stratified sampling
-
 * Preserved class distribution for reliable evaluation
 
 
-4. Feature Scaling
+**4. Feature Scaling**
    
-Centering and scaling applied to numeric variables
-
-Critical for models like:
-
-SVM
-
-Neural Networks
+* Centering and scaling applied to numeric variables
+* Critical for models like:
+  * SVM
+  * Neural Networks
 
 🤖 Machine Learning Models
 
