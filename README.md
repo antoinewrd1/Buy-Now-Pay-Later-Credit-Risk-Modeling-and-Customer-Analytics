@@ -82,9 +82,9 @@ __**1. Data Preparation:**__
 * Random Forest RMSE = 4.27 → realistic and reliable
 
 🔹 **Classification (Default Prediction)**
-* **Baseline Models:**
- * Decision Tree
- * Logistic Regression
+ * **Baseline Models:**
+  * Decision Tree
+  * Logistic Regression
 
 * **Tuned Models (5-Fold CV, ROC Optimization):**
  * Logistic Regression
