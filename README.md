@@ -35,11 +35,9 @@ Risk score and default flag
 
 **Languages & Tools**
 
-R
+R, Kaggle API
 
-Kaggle API
-
-Libraries
+Libraries:
 
 Data Manipulation: tidyverse, reshape2
 
