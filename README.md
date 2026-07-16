@@ -145,7 +145,7 @@ AUC (Area Under Curve)
 * Model predicts nearly all observations as default
 * Caused by class imbalance and poor convergence
 
-🔍 **Key Findings**
+🔍 **Key Findings:**
 
 * Random Forest is the most reliable model across tasks
 * Linear Regression suffers from data leakage
@@ -154,7 +154,7 @@ AUC (Area Under Curve)
 * Neural Networks struggle with imbalanced tabular data
 * Customer behavior is largely homogeneous with niche high-risk segments
 
-📌 **Recommendations**
+📌 **Recommendations:**
 
 _1. Use Ensemble Models:_ Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
    
