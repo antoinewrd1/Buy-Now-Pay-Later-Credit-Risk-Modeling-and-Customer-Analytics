@@ -70,44 +70,39 @@ __**1. Data Preparation:**__
   * SVM
   * Neural Networks
 
-🤖 Machine Learning Models
+🤖 **Machine Learning Models**
 
-🔹 Regression (Risk Score Prediction)
-
-Linear Regression (baseline — affected by data leakage)
-
-Random Forest (robust, nonlinear modeling)
+* 🔹 Regression (Risk Score Prediction)
+* Linear Regression (baseline — affected by data leakage)
+* Random Forest (robust, nonlinear modeling)
 
 
-📊 **Results:**
+📊 _**Results:**_
 
-Linear Regression RMSE ≈ 0 → ⚠️ indicates data leakage
+* Linear Regression RMSE ≈ 0 → ⚠️ indicates data leakage
+* Random Forest RMSE = 4.27 → realistic and reliable
 
-Random Forest RMSE = 4.27 → realistic and reliable
+🔹 **Classification (Default Prediction)**
 
-🔹 Classification (Default Prediction)
+* **Baseline Models:**
 
-Baseline Models:
+ * Decision Tree
+ * Logistic Regression
 
-Decision Tree,
-Logistic Regression
+* **Tuned Models (5-Fold CV, ROC Optimization):**
 
-Tuned Models (5-Fold CV, ROC Optimization):
-
-Logistic Regression,
-Random Forest,
-SVM (Radial Kernel)
+ * Logistic Regression
+ * Random Forest
+ * SVM (Radial Kernel)
 
 
-📊 **AUC Comparison**:
+📊 _**AUC Comparison**:_
 
-Model	AUC
+Model	AUC:
 
-Random Forest	0.768
-
-SVM	0.753
-
-Logistic	0.740
+* Random Forest	0.768
+* SVM	0.753
+* Logistic	0.740
 
 🏆 Best Model: Random Forest
 
