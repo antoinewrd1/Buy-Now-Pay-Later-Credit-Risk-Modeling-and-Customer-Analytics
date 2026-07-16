@@ -159,18 +159,18 @@ AUC (Area Under Curve)
 1. Use Ensemble Models: Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
    
 2. Handle Class Imbalance:
-Apply:
-  * SMOTE
-  * Class weighting
-  * Threshold tuning
+* Apply:
+   * SMOTE
+   * Class weighting
+   * Threshold tuning
 
 3. Prevent Data Leakage:
-* Remove features derived from target variables
-* Validate feature independence
+ * Remove features derived from target variables
+ * Validate feature independence
 
 4. Optimize Decision Thresholds: 
-* Move beyond default 0.5 cutoff
-* Align with business risk tolerance
+ * Move beyond default 0.5 cutoff
+ * Align with business risk tolerance
 
 5. Add Explainability
 * Feature importance
