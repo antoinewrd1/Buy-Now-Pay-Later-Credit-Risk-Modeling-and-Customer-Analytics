@@ -1,5 +1,7 @@
 # Buy-Now-Pay-Later-Credit-Risk-Modeling-and-Customer-Analytics
+
 End-to-end BNPL credit risk modeling project using R. Includes EDA, feature engineering, regression and classification models, clustering, and anomaly detection. Random Forest achieved best performance (AUC 0.768), highlighting effective prediction of default risk and customer segmentation insights.
+
 
 🚀 **Project Overview**
 
@@ -7,27 +9,34 @@ Buy Now, Pay Later (BNPL) platforms have rapidly transformed consumer financing 
 
 This project applies end-to-end machine learning and analytics techniques to:
 
-Predict credit risk scores
-Classify default vs. non-default customers
-Identify customer segments
+Predict credit risk scores,
+Classify default vs. non-default customers,
+Identify customer segments,
 Detect anomalies and high-risk behaviors
 
 The workflow integrates data preprocessing, exploratory data analysis (EDA), supervised learning, unsupervised learning, and model evaluation to simulate a real-world fintech risk modeling pipeline.
 
+
 📂 **Dataset**
+
 Source: Kaggle BNPL Credit Risk Dataset
+
 Size: ~10,000 records
+
 Features include:
-Customer demographics
-Income and employment details
-Transaction history
-Product categories
+
+Customer demographics,
+Income and employment details,
+Transaction history,
+Product categories,
 Risk score and default flag
+
 ⚙️ Tech Stack
 
 **Languages & Tools**
 
 R
+
 Kaggle API
 
 Libraries
@@ -38,7 +47,9 @@ Clustering & Anomaly Detection: dbscan, isotree
 Visualization: ggplot2, factoextra
 Evaluation: pROC
 
+
 🔧 **Project Pipeline**
+
 1. Data Preparation
    
 Converted categorical variables to factors
@@ -78,80 +89,117 @@ Preserved class distribution for reliable evaluation
 Centering and scaling applied to numeric variables
 
 Critical for models like:
+
 SVM
+
 Neural Networks
+
 🤖 Machine Learning Models
+
 🔹 Regression (Risk Score Prediction)
+
 Linear Regression (baseline — affected by data leakage)
+
 Random Forest (robust, nonlinear modeling)
+
 
 📊 **Results:**
 
 Linear Regression RMSE ≈ 0 → ⚠️ indicates data leakage
+
 Random Forest RMSE = 4.27 → realistic and reliable
+
 🔹 Classification (Default Prediction)
+
 Baseline Models:
-Decision Tree
+
+Decision Tree,
 Logistic Regression
+
 Tuned Models (5-Fold CV, ROC Optimization):
-Logistic Regression
-Random Forest
+
+Logistic Regression,
+Random Forest,
 SVM (Radial Kernel)
+
 
 📊 **AUC Comparison**:
 
 Model	AUC
+
 Random Forest	0.768
+
 SVM	0.753
+
 Logistic	0.740
 
 🏆 Best Model: Random Forest
 
+
 📈 **Evaluation Metrics**
-Confusion Matrix
-Accuracy
-Sensitivity (Recall)
-Specificity
-ROC Curve
+
+Confusion Matrix,
+Accuracy,
+Sensitivity (Recall),
+Specificity,
+ROC Curve,
 AUC (Area Under Curve)
+
 🧠 Unsupervised Learning
-🔹 Clustering
-K-Means (k = 3)
-Hierarchical Clustering
+
+🔹 Clustering,
+K-Means (k = 3),
+Hierarchical Clustering,
 DBSCAN
+
 
 📌 **Insights:**
 
 One dominant customer group
+
 Smaller clusters represent niche/high-risk segments
+
 DBSCAN successfully identifies noise (outliers)
+
 🔹 Anomaly Detection
-Isolation Forest
+Isolation Forest,
 One-Class SVM
+
 
 📌 **Purpose:**
 
 Detect fraudulent or unusual financial behavior
+
 Identify high-risk customers outside normal patterns
 
+
 🧪 **Neural Network**
+
 Single hidden layer (5 neurons)
+
 Binary classification (default prediction)
 
 📊 Results:
 
 Accuracy: 39.1%
+
 Sensitivity: 99.5%
+
 Specificity: 0.3%
 
 ⚠️ Issue:
 
 Model predicts nearly all observations as default
+
 Caused by class imbalance and poor convergence
 
+
 🔍 **Key Findings**
+
 Random Forest is the most reliable model across tasks
+
 Linear Regression suffers from data leakage
+
 Logistic Regression underperforms without feature engineering
 SVM performs well but shows instability
 Neural Networks struggle with imbalanced tabular data
