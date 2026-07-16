@@ -42,9 +42,13 @@ Kaggle API
 Libraries
 
 Data Manipulation: tidyverse, reshape2
+
 Modeling: caret, glmnet, randomForest, e1071, rpart, nnet, kernlab
+
 Clustering & Anomaly Detection: dbscan, isotree
+
 Visualization: ggplot2, factoextra
+
 Evaluation: pROC
 
 
@@ -78,11 +82,13 @@ Certain customer segments show significantly higher default rates
 
 Strong relationships exist between financial attributes and risk
 
+
 3. Train/Test Split
    
 80/20 split using stratified sampling
 
 Preserved class distribution for reliable evaluation
+
 
 4. Feature Scaling
    
@@ -162,7 +168,8 @@ Smaller clusters represent niche/high-risk segments
 DBSCAN successfully identifies noise (outliers)
 
 
-🔹 Anomaly Detection
+🔹 Anomaly Detection:
+
 Isolation Forest,
 One-Class SVM
 
@@ -202,43 +209,68 @@ Random Forest is the most reliable model across tasks
 Linear Regression suffers from data leakage
 
 Logistic Regression underperforms without feature engineering
+
 SVM performs well but shows instability
+
 Neural Networks struggle with imbalanced tabular data
+
 Customer behavior is largely homogeneous with niche high-risk segments
 
 📌 **Recommendations**
+
 1. Use Ensemble Models
+   
 Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
+
 2. Handle Class Imbalance
+   
 Apply:
-SMOTE
-Class weighting
+
+SMOTE,
+Class weighting,
 Threshold tuning
-3. Prevent Data Leakage
+
+3. Prevent Data Leakage:
+   
 Remove features derived from target variables
+
 Validate feature independence
-4. Optimize Decision Thresholds
+
+4. Optimize Decision Thresholds:
+   
 Move beyond default 0.5 cutoff
+
 Align with business risk tolerance
+
 5. Add Explainability
-Feature importance
+   
+Feature importance,
 SHAP values (future improvement)
+
 6. Improve Neural Networks
-Regularization
-Better architecture
-Balanced datasets
+    
+Regularization,
+better architecture,
+balanced datasets
+
 7. Leverage Unsupervised Learning
+    
 Integrate clustering + anomaly detection into production pipelines
 
 ▶️ **How to Run**
+
 1. Clone Repository
+   
 git clone https://github.com/yourusername/bnpl-credit-risk.git
+
 cd bnpl-credit-risk
+
 2. Install Dependencies
 
 Run the script — packages will auto-install:
 
 source("bnpl_analysis.R")
+
 3. Kaggle Setup
 
 Make sure Kaggle API is configured:
@@ -246,10 +278,15 @@ Make sure Kaggle API is configured:
 kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
 
 📊 **Future Improvements**
+
 Implement XGBoost / LightGBM
+
 Add hyperparameter tuning with Bayesian optimization
+
 Deploy model via API (Plumber or FastAPI)
+
 Build interactive dashboard (Shiny / Tableau)
+
 Integrate real-time scoring pipeline (Spark / Kafka)
 
 📎 **Project Structure**
@@ -264,7 +301,9 @@ Integrate real-time scoring pipeline (Spark / Kafka)
 💼 **Author**
 
 Antoine Ward
+
 Data Scientist | Healthcare & Fintech Analytics
 
 LinkedIn: https://linkedin.com/in/antoine-ward-mph-2401581a1
+
 GitHub: https://github.com/antoinewrd1
