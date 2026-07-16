@@ -156,45 +156,45 @@ AUC (Area Under Curve)
 
 📌 **Recommendations**
 
-1. Use Ensemble Models: Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
+_1. Use Ensemble Models:_ Deploy Random Forest or Gradient Boosting (e.g., XGBoost)
    
-2. Handle Class Imbalance:
+_2. Handle Class Imbalance:_
 * Apply:
    * SMOTE
    * Class weighting
    * Threshold tuning
 
-3. Prevent Data Leakage:
+_3. Prevent Data Leakage:_
  * Remove features derived from target variables
  * Validate feature independence
 
-4. Optimize Decision Thresholds: 
+_4. Optimize Decision Thresholds:_
  * Move beyond default 0.5 cutoff
  * Align with business risk tolerance
 
-5. Add Explainability
+_5. Add Explainability:_
 * Feature importance
 * SHAP values (future improvement)
 
-6. Improve Neural Networks   
+_6. Improve Neural Networks:_   
 * Regularization
 * Better architecture
 * Balanced datasets
 
-7. Leverage Unsupervised Learning
+_7. Leverage Unsupervised Learning:_
 * Integrate clustering + anomaly detection into production pipelines
 
 ▶️ **How to Run**
 
-1. Clone Repository
+1. Clone Repository:
 * git clone https://github.com/yourusername/bnpl-credit-risk.git
 * cd bnpl-credit-risk
 
-2. Install Dependencies
+2. Install Dependencies:
 * Run the script — packages will auto-install:
 * source("bnpl_analysis.R")
 
-3. Kaggle Setup
+3. Kaggle Setup:
 * Make sure Kaggle API is configured:
 * kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
 
