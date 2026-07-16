@@ -94,9 +94,9 @@ __**1. Data Preparation:**__
 📊 _**AUC Comparison**:_
 
 Model	AUC:
-* Random Forest	0.768
-* SVM	0.753
-* Logistic	0.740
+ * Random Forest	0.768
+ * SVM	0.753
+ * Logistic	0.740
 
 🏆 Best Model: Random Forest
 
