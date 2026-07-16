@@ -198,7 +198,7 @@ _**3. Kaggle Setup:**_
 * Make sure Kaggle API is configured:
 * kaggle datasets download -d shree0910/buy-now-and-pay-later-fintech-ml-dataset
 
-📊 **Future Improvements**
+📊 **Future Improvements:**
 * Implement XGBoost / LightGBM
 * Add hyperparameter tuning with Bayesian optimization
 * Deploy model via API (Plumber or FastAPI)
@@ -206,12 +206,19 @@ _**3. Kaggle Setup:**_
 * Integrate real-time scoring pipeline (Spark / Kafka)
 
 📎 **Project Structure**
+
 ├── data/
+
 ├── bnpl_analysis.R
+
 ├── README.md
+
 └── outputs/
+
     ├── plots/
+    
     ├── models/
+    
     └── metrics/
     
 💼 **Author**
